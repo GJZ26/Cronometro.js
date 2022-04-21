@@ -10,17 +10,17 @@
     animation: pausedChange 1s ease infinite;
 }
 @keyframes activeChange {
-    0%{border-color: orangered;
-    color: black;}
+    0%{border-color: rgb(255, 117, 67);
+    color: rgb(41, 41, 41);}
     50%{border-color: red;
     color: rgb(56, 20, 20);}
-    100%{border-color: orangered;
-    color: black;}
+    100%{border-color: rgb(255, 117, 67);
+    color: rgb(41, 41, 41);}
 }
 @keyframes pausedChange {
-    0%{color:black}
+    0%{color:rgb(41, 41, 41)}
     50%{color: rgba(0, 0, 0, 0.521);}
-    100%{color:black}
+    100%{color:rgb(41, 41, 41)}
 }
 @keyframes fadeIn{
     0%{
@@ -29,4 +29,17 @@
     100%{
         opacity: 1;
     }
+}
+@keyframes activeChangeDark {
+    0%{border-color: rgb(255, 117, 67);
+    color: rgb(204, 204, 204);}
+    50%{border-color: red;
+    color: rgb(247, 247, 247);}
+    100%{border-color: rgb(255, 117, 67);
+    color: rgb(204, 204, 204);}
+}
+@keyframes pausedChangeDark {
+    0%{color:rgb(204, 204, 204);}
+    50%{color: rgb(124, 124, 124);}
+    100%{color:rgb(204, 204, 204);}
 }

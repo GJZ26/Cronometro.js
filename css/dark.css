@@ -1,0 +1,41 @@
+body.dark{
+    background: linear-gradient(180deg,rgb(46, 46, 46),rgb(36, 36, 36));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contenedor1.dark,.contenedor2.dark{
+    background: linear-gradient(180deg,rgb(46, 46, 46),rgb(36, 36, 36));
+    color: rgb(204, 204, 204);
+}
+.empezar.dark:hover{
+    border-color: #ffc1b6;
+    font-size: 20px;
+    transition: all 100ms;
+    text-shadow: 2px 2px 5px #7c7c7c65;
+    color: white;
+}
+.empezar.dark:active,.stop.dark:active,.pause.dark:active{
+    color: #7c7c7c65;
+    font-size: 18px;
+    border-bottom: none;
+    text-shadow: 2px 2px 5px #2b2b2b65;
+}
+.active.dark{
+    animation: activeChangeDark 1s ease infinite;
+}
+.paused.dark{
+    animation: pausedChangeDark 1s ease infinite;
+}
+.stop.dark:hover, .pause.dark:hover{
+    border-color: #ffc1b6;
+    font-size: 17px;
+    padding-bottom: 2px;
+    transition: all 100ms;
+    text-shadow: 2px 2px 5px #2b2b2b65;
+    color: white;
+}
+.stop.dark, .pause.dark, .empezar.dark{
+    border-color: rgb(223, 223, 223)
+}

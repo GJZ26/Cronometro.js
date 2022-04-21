@@ -3,7 +3,7 @@ body,p{
     padding: 0;
 }
 body{
-    background: linear-gradient(180deg,rgb(221, 221, 221),rgb(192, 192, 192));
+ background: linear-gradient(180deg,rgb(221, 221, 221),rgb(192, 192, 192));
  height: 100%;
  margin: 0;
  background-repeat: no-repeat;
@@ -21,9 +21,10 @@ body{
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg,rgb(221, 221, 221),rgb(192, 192, 192));
-    z-index: 1000;
+    z-index: 10;
     animation: fadeIn 200ms ease;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgb(41, 41, 41);
 }
 .empezar{
     text-align: center;
@@ -37,6 +38,7 @@ body{
     font-size: 20px;
     transition: all 100ms;
     text-shadow: 2px 2px 5px #ffffff;
+    color: black;
 }
 .empezar:active,.stop:active,.pause:active{
     color: #ffffff6c;
@@ -63,6 +65,7 @@ body{
     justify-content: center;
     align-items: center;
     transition: all 200ms;
+    color: rgb(41, 41, 41);
 }
 .crono{
     display: flex;
@@ -90,11 +93,12 @@ body{
     margin-left: 40px;
 }
 .stop:hover, .pause:hover{
-    border-color: #fff8b6;
+    border-color: #fff383;
     font-size: 17px;
     padding-bottom: 2px;
     transition: all 100ms;
     text-shadow: 2px 2px 5px #ffffff;
+    color: black;
 }
 .botones{
     display: flex;
@@ -106,7 +110,23 @@ body{
 .time{
     font-size: 80px;
 }
-
+.modo{
+    appearance: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/icon/sun.png");
+    background-size:contain;
+    opacity: 1;
+    transition: background-image 500ms ease;
+    cursor: pointer;
+    position: absolute;
+    z-index: 20;
+}
+.modo:checked{
+    background-image: url("/icon/moon.png");
+}
 @media (max-width:500px) {
     .csec{
         display: none;

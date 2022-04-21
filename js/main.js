@@ -60,7 +60,7 @@ function reset(){
     csec.textContent=".00";
 }
 
-console.log("Descargué el repositorio aquí: https://github.com/GJZ26/Cronometro.js");
+console.log("Versión 1.1.0\nDescargue el repositorio aquí: https://github.com/GJZ26/Cronometro.js");
 
 start.addEventListener('click',empezar);
 stop.addEventListener('click',detener);
