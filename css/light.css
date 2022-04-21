@@ -1,0 +1,117 @@
+body,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(180deg,rgb(221, 221, 221),rgb(192, 192, 192));
+ height: 100%;
+ margin: 0;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+/*  Estilos de la primera página */
+
+.contenedor1{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,rgb(221, 221, 221),rgb(192, 192, 192));
+    z-index: 1000;
+    animation: fadeIn 200ms ease;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.empezar{
+    text-align: center;
+    font-size: 18px;
+    border-bottom: solid;
+    border-color: aliceblue;
+    cursor: pointer;
+}
+.empezar:hover{
+    border-color: #fff8b6;
+    font-size: 20px;
+    transition: all 100ms;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+.empezar:active,.stop:active,.pause:active{
+    color: #ffffff6c;
+    font-size: 18px;
+    border-bottom: none;
+}
+.mensaje{
+    position: absolute;
+    margin-top: 90px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 300;
+    text-align: center;
+    cursor:default;
+}
+
+/*  Estilos de la segunda página */
+
+.contenedor2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms;
+}
+.crono{
+    display: flex;
+    cursor:default;
+    font-family: 'Courier Prime', monospace;
+}
+.csec{
+    font-size: 30px;
+    margin-top: 40px;
+}
+.stop{
+    height: 20px;
+    position: relative;
+    border-bottom: solid;
+    border-color: aliceblue;
+    cursor: pointer;
+    margin-left: -40px;
+}
+.pause{
+    position: absolute;
+    height: 20px;
+    border-bottom: solid;
+    border-color: aliceblue;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.stop:hover, .pause:hover{
+    border-color: #fff8b6;
+    font-size: 17px;
+    padding-bottom: 2px;
+    transition: all 100ms;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+.botones{
+    display: flex;
+    margin-top: 150px;
+    position: absolute;
+    padding-right: 40px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.time{
+    font-size: 80px;
+}
+
+@media (max-width:500px) {
+    .csec{
+        display: none;
+    }
+    .time{
+        font-size: 50px;
+    }
+}
